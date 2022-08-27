@@ -19,7 +19,7 @@ Yes of course you can! Our budget has room for consulting the C# expert, Andreas
 ## Iterations
 
 ### Iteration 1 - The basics of an account
-What we want to create here is some of the basics of an account. What is the basic properties of an account?
+What we want to create here is some of the basics of an account. What is the basic abilities of an account?
 
 - It has to hold some amount of money (However it can be 0)
 - It cannot go below 0
@@ -29,3 +29,6 @@ What we want to create here is some of the basics of an account. What is the bas
 An account should at least how the following properties:
 - Id
 - Balance
+
+We want you to print out examples in the console that demonstrates every ability.
+Remember! We start small, and then build on top of it:-)
