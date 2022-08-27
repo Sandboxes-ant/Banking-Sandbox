@@ -13,6 +13,9 @@ Every iteration comes with some certain demands. You have to use C#. However, ho
 ### How to complete an iteration?
 When you think that you are done with a feature, the you create a Pull Request into master. Write a message to the CEO (Andreas Tietgen) that you have created the pull request. Then he will see if everything is as expected
 
+### Can i get any help?
+Yes of course you can! Our budget has room for consulting the C# expert, Andreas Tietgen. Remember you can always ask us questions if the iterations description is unclear.
+
 
 ## Iterations
 
