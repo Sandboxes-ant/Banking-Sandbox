@@ -20,47 +20,52 @@ Console.WriteLine("2: Withdrawal money");
 
 input = Convert.ToInt32(Console.ReadLine());
 
-if (input == 1)
+switch (input)
 {
-    Console.WriteLine("You have selected to insert money");
-    Console.WriteLine("How much money would you like to insert?");
-    amountOfMoney = Convert.ToInt32(Console.ReadLine());
-    accountBalance = accountBalance + amountOfMoney;
-    Console.WriteLine("Your total balance is now: " + accountBalance);
-    Console.WriteLine("Bye!");
-    Console.ReadKey();
-    Environment.Exit(0);
-}
-
-else if (input == 2)
-{
-    Console.WriteLine("You have selected to withdraw money");
-    Console.WriteLine("How much money would you like to withdraw?");
-    Console.WriteLine("Your balance is: " + accountBalance);
-    amountOfMoney = Convert.ToInt32(Console.ReadLine());
-    accountBalance = accountBalance - amountOfMoney;
-
-    if (accountBalance <= 0)
-    {
-        Console.WriteLine("You cannot withdraw more money than you own!");
+    case < 0:
+        Environment.Exit(0);
+        break;
+    
+    case 1:
+        Console.WriteLine("You have selected to insert money");
+        Console.WriteLine("How much money would you like to insert?");
+        amountOfMoney = Convert.ToInt32(Console.ReadLine());
+        accountBalance = accountBalance + amountOfMoney;
+        Console.WriteLine("Your total balance is now: " + accountBalance);
         Console.WriteLine("Bye!");
         Console.ReadKey();
         Environment.Exit(0);
-    }
+        break;
+    
+    case 2:
+        Console.WriteLine("You have selected to withdraw money");
+        Console.WriteLine("How much money would you like to withdraw?");
+        Console.WriteLine("Your balance is: " + accountBalance);
+        amountOfMoney = Convert.ToInt32(Console.ReadLine());
+        accountBalance = accountBalance - amountOfMoney;
 
-    else
-    {
-        Console.WriteLine("You have withdrawed: " + amountOfMoney);
-        Console.WriteLine("Your new balance is: " + accountBalance);
-        Console.WriteLine("Bye!");
+        if (accountBalance <= 0)
+        {
+            Console.WriteLine("You cannot withdraw more money than you own!");
+            Console.WriteLine("Bye!");
+            Console.ReadKey();
+            Environment.Exit(0);
+        }
+
+        else
+        {
+            Console.WriteLine("You have withdrawed: " + amountOfMoney);
+            Console.WriteLine("Your new balance is: " + accountBalance);
+            Console.WriteLine("Bye!");
+            Console.ReadKey();
+            Environment.Exit(0);
+
+        }
+        break;
+    
+    case > 2:
+        Console.Write("Error :-) Function not added yet!");
         Console.ReadKey();
         Environment.Exit(0);
-    }
-
-}
-
-else
-{
-    Console.Write("Error :-) Function not added yet!");
-    Console.ReadKey();
+        break;
 }
