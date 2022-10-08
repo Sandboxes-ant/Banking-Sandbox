@@ -32,3 +32,15 @@ An account should at least how the following properties:
 
 We want you to print out examples in the console that demonstrates every ability.
 Remember! We start small, and then build on top of it:-)
+
+### Iteration 2 - We want more!
+Now that the basics of an account has be set up and defined in a simple console program then we want to extend it. 
+This iteration is going to be large one.
+
+- We want you to define an interface, called `IAccount`, with the basic properties and functions of an account. 
+  - The definition of the interface should look like the same as the above properties and abilities that we gave an account in the last iteration
+- We want you to create a class called `Account`, which implements the properties and functions of an account
+  - The implementation is going to look like the code you have implemented in iteration 2
+
+With the `Account` specified as a class and an interface then we would like you to extend the console user interface to be able to display a list of accounts. 
+Also to choose which account to withdraw from.
